@@ -30,7 +30,7 @@ jobs:
           CYPRESS_MAILOSAUR_API_KEY: ${{ secrets.CYPRESS_MAILOSAUR_API_KEY }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
-          command: npm test:cloud
+          command: npm run test:cloud
   cypress-tests-tablet:
     needs: eslint
     runs-on: ubuntu-22.04
